@@ -1,0 +1,128 @@
+[debug] [2025-07-01T08:58:47.112Z] ----------------------------------------------------------------------
+[debug] [2025-07-01T08:58:47.117Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-07-01T08:58:47.118Z] CLI Version:   14.9.0
+[debug] [2025-07-01T08:58:47.118Z] Platform:      win32
+[debug] [2025-07-01T08:58:47.119Z] Node Version:  v22.16.0
+[debug] [2025-07-01T08:58:47.119Z] Time:          Tue Jul 01 2025 14:28:47 GMT+0530 (India Standard Time)
+[debug] [2025-07-01T08:58:47.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-01T08:58:47.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-01T08:58:47.132Z] > authorizing via signed-in user (glacier1311@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\makar\Desktop\contextiq-backend-integrated
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-07-01T09:03:32.656Z] Checked if tokens are valid: false, expires at: 1751281184232
+[debug] [2025-07-01T09:03:32.657Z] Checked if tokens are valid: false, expires at: 1751281184232
+[debug] [2025-07-01T09:03:32.657Z] > refreshing access token with scopes: []
+[debug] [2025-07-01T09:03:32.663Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-01T09:03:32.663Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-01T09:03:42.917Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-01T09:03:42.918Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-01T09:03:42.949Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-01T09:03:42.950Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"contextiq-3bf5c"}
+[debug] [2025-07-01T09:03:50.926Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-01T09:03:50.926Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"contextiq-3bf5c-be026"}
+[debug] [2025-07-01T09:04:23.516Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:23.516Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:23.517Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-01T09:04:23.518Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"contextiq-3bf5c-be026"}
+[debug] [2025-07-01T09:04:24.172Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-01T09:04:24.172Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"contextiq-3bf5c-be026"}
+[debug] [2025-07-01T09:04:50.649Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:50.650Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:50.650Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-07-01T09:04:50.651Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"contextiq-3bf5c-be026","name":"Smart Assistant"}
+[debug] [2025-07-01T09:04:57.172Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-07-01T09:04:57.173Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6139724241852719529"}
+[debug] [2025-07-01T09:04:57.175Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:57.176Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:57.177Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 [none]
+[debug] [2025-07-01T09:04:58.591Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 200
+[debug] [2025-07-01T09:04:58.591Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 {"name":"operations/create_project.global.6139724241852719529"}
+[debug] [2025-07-01T09:04:59.094Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-07-01T09:04:59.095Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:59.095Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:59.095Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 [none]
+[debug] [2025-07-01T09:04:59.935Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 200
+[debug] [2025-07-01T09:04:59.936Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6139724241852719529 {"name":"operations/create_project.global.6139724241852719529","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"1097250048660","projectId":"contextiq-3bf5c-be026","lifecycleState":"ACTIVE","name":"Smart Assistant","createTime":"2025-07-01T09:04:58.587581Z"}}
+[debug] [2025-07-01T09:04:59.938Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:59.939Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:04:59.939Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026:addFirebase [none]
+[debug] [2025-07-01T09:05:02.765Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026:addFirebase 200
+[debug] [2025-07-01T09:05:02.765Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026:addFirebase {"name":"operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh"}
+[debug] [2025-07-01T09:05:02.766Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:02.766Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:02.766Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh [none]
+[debug] [2025-07-01T09:05:05.925Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh 200
+[debug] [2025-07-01T09:05:05.926Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh {"name":"operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh"}
+[debug] [2025-07-01T09:05:06.428Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-07-01T09:05:06.428Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:06.428Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:06.429Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh [none]
+[debug] [2025-07-01T09:05:08.395Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh 200
+[debug] [2025-07-01T09:05:08.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh {"name":"operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh"}
+[debug] [2025-07-01T09:05:09.397Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-07-01T09:05:09.398Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:09.398Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:09.399Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh [none]
+[debug] [2025-07-01T09:05:10.235Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh 200
+[debug] [2025-07-01T09:05:10.235Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh {"name":"operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh"}
+[debug] [2025-07-01T09:05:12.235Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-07-01T09:05:12.235Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:12.236Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:12.236Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh [none]
+[debug] [2025-07-01T09:05:12.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh 200
+[debug] [2025-07-01T09:05:12.591Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh {"name":"operations/workflows/M2QxODVmMWMtZTE4OC00YWRkLTk2NWQtMWZmZGNiODA4ZWRh","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"contextiq-3bf5c-be026","projectNumber":"1097250048660","displayName":"Smart Assistant","name":"projects/contextiq-3bf5c-be026","resources":{"hostingSite":"contextiq-3bf5c-be026"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: contextiq-3bf5c-be026
+[info]    - Project Name: Smart Assistant
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/contextiq-3bf5c-be026/overview
+[info] i  Using project contextiq-3bf5c-be026 (Smart Assistant) 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-01T09:05:12.637Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:12.637Z] Checked if tokens are valid: true, expires at: 1751364221919
+[debug] [2025-07-01T09:05:12.638Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026 [none]
+[debug] [2025-07-01T09:05:13.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026 200
+[debug] [2025-07-01T09:05:13.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/contextiq-3bf5c-be026 {"projectId":"contextiq-3bf5c-be026","projectNumber":"1097250048660","displayName":"Smart Assistant","name":"projects/contextiq-3bf5c-be026","resources":{"hostingSite":"contextiq-3bf5c-be026"},"state":"ACTIVE","etag":"1_4a9d66c0-462b-46e6-82d5-63a34914b647"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-07-01T09:08:04.186Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-07-01T09:08:06.443Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-07-01T09:08:06.443Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.10.0","browserURL":"https://www.gstatic.com/firebasejs/11.10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.10.0/firebase.tgz"},"live":{"version":"11.10","browserURL":"https://www.gstatic.com/firebasejs/live/11.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.10/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.10.0/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.10.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.10.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.10.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.10.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.10.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.10.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.10.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.10.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.10.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.10.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.memory.js"}}
+[debug] [2025-07-01T09:08:07.561Z] Error: Path contains invalid characters: C:\Users\makar\Desktop\contextiq-backend-integrated\"C:\Users\makar\Desktop\contextiq-backend-integrated"
+    at checkPath (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\utils.js:16:21)
+    at module.exports.makeDirSync (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\make-dir.js:21:3)
+    at Object.createFileSync (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:59:45)
+    at Config.writeProjectFile (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:160:12)
+    at Config.askWriteProjectFile (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:208:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.doSetup (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:157:9)
+    at async init (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:57:13)
+    at async Command.initAction [as actionFn] (C:\Users\makar\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:198:5)
+[error] 
+[error] Error: An unexpected error has occurred.
