@@ -12,3 +12,4 @@ torch
 nltk
 PyPDF2
 spacy
+gunicorn
